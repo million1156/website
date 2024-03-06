@@ -1,0 +1,91 @@
+body {
+    background-color: black !important;
+}
+
+
+/* USE THIS FOR DEBUGGING * {
+    border: 1px solid red;
+  } */ 
+
+#announcement {
+    background-color: rgb(46, 46, 46) !important;
+}  
+
+.navbar, .navbar-brand{
+    background-color: black !important;
+    color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(83, 82, 82) !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: cyan !important;
+}
+
+
+#suyu-logo {
+    height: 420px;
+}
+
+#headertext {
+    color: white;
+    text-align: top;
+}
+
+#headersubtext {
+    color: white !important;
+    text-align: top;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 20%;
+}
+
+#downloadbutton {
+    margin-left: 20%;
+}
+
+#downloadicon, #sourceicon, #discordicon, #giticon, #windows, #linux-icon {
+    filter: invert(100%);
+}
+
+/* #information {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+} */
+
+#infoheadtext, #infotext {
+    color: white;
+}
+
+#featuresheadertext, .card-title, .card-text, .card-header {
+    color: white;
+}
+
+.card {
+    background-color: rgb(37, 32, 32);
+}
+
+.card {
+    border: 5px solid red;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+      transform: scale(1.1);
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+

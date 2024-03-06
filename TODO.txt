@@ -1,0 +1,3 @@
+DONE -Autoclose announcment bar after 7 seconds
+make download page wish uses a yaml file to list builds.
+TODO - ambient background if possible --- do this later tried it was breaking a lot of stuff. need to do this after converting suyu.png and favicon.png to to transparent
