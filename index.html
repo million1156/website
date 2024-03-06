@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suyu Emulator</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3
+/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="img/favicon.png">
+  <meta name="theme-color" content="#3584e4
+">
+  <meta property="og:title" content="Suyu Emulator" />
+  <meta property="og:description" content="A Open Source Switch Emulator" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="Suyu Emulator" />
+  <meta name="twitter:description" content="A Open Source Switch Emulator" />
+  <meta name="twitter:image" content="" />
+</head>
+<body>
+  <div id="loader-wrapper" class="bg-white position-fixed top-0 z-3 w-100 h-100 text-center">
+    <div class="spinner-border mt-5" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">
+        <img src="img/favicon.png" alt="Suyu Logo" height="30" class="d-inline-block align-text-top">
+        Suyu
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="downloadbtnone">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Compatibility List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="discordbtnone">
+              <img src="img/discord.svg" alt="Discord Logo" height="24" id="discordicon">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="sourcebtnone">
+              <img src="img/gitlab.svg" alt="Git Logo" height="24" id="giticon">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="container pb-5" id="introduction">
+      <div class="d-flex align-items-center" id="header">
+        <img class="mr-5" id="suyu-logo" src="img/suyu.png" alt="Suyu Logo">
+        <div>
+          <h2 class="pb-3" id="headertext">A Open Source Switch Emulator</h2>
+          <p class="pb-2" id="headersubtext">Suyu is an experimental open-source emulator for the Nintendo Switch System. Built with portability in mind, it is coded in C++ and actively maintained for Windows And Linux</p>
+            <button type="button" class="btn btn-success" id="downloadbutton">
+              <img src="img/download.png" id="downloadicon" width="20"/>&nbspDownload
+            </button>
+            <button type="button" class="btn btn-primary sourcebtn" id="sourcebtntwo">
+              <img src="img/gitlab.svg" id="sourceicon" width="20"/>&nbspSource Code
+            </button>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid pb-5" id="information">
+      <div class="d-flex flex-column align-items-center" id="info">
+        <h1 class="pb-3 mt-4" id="infoheadtext">About Suyu</h1>
+        <p id="infotext">Suyu Is A Fork Of Yuzu Made After The Shut Down Of The Yuzu Emulator<br> 
+          After A Lawsuit Was Filed On February 26, 2024 And Was Settled On March 4, 2024<br>
+          Causing Yuzu To Stop Distribution Of All There Emulators: Yuzu And Citra<br>
+          Using Archives From The Web The Suyu Team Is Continuing Development Of Yuzu.</p>
+      </div>
+    </section>
+    <section class="container pb-5" id="features">
+      <h1 class="mt-4 pb-5 text-center" id="featuresheadertext">Features</h1>
+      <div class="d-flex flex-row align-items-center justify-content-center" id="featuresection">
+          <div class="card text-center mx-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Open Source</h5>
+              <p class="card-text">The Project's Source Code Is Available In Gitlab</p>
+              <a href="#" class="btn btn-primary sourcebtn" id="sourcebtnthree">
+                <img src="img/gitlab.svg" alt="Git Logo" height="24" id="giticon">&nbspSource Code
+              </a>
+            </div>
+          </div>
+          <div class="card text-center mx-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Cross Platform</h5>
+              <p class="card-text">Suyu Is Available For Linux & Windows</p>
+              <a href="#" class="btn btn-success" id="downloadbtnthree">
+                <img src="img/download.png" id="downloadicon" width="20"/>&nbspDownload
+              </a>
+            </div>
+          </div>
+          <div class="card text-center mx-3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Well Supported</h5>
+              <p class="card-text">Suyu Has A Discord Server For Support Inqueries <br> Full Of Passionate Emulation Community Members</p>
+              <a href="#" class="btn btn-info discordbtn" id="discordbtnthree">
+                <img src="img/discord.svg" alt="Discord Logo" height="24" id="discordicon">&nbspJoin
+              </a>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+  </main>
+  <div class="position-fixed top-0 w-100 p-2 text-bg-dark d-flex justify-content-between" id="announcement"><p id="annoucement-text">We Need Developers! Join Our Discord Server To Join Our Development Team!</p><button type="button" id="announceclose" class="btn-close btn-close-white" onClick="parentNode.remove()" aria-label="Close"></button></div>
+  <!--[if IE]><div class="position-fixed bottom-0 w-100 p-2 text-bg-dark d-flex justify-content-between"><p>Outdated browser dectected. Please use a modern browser for a better browsing experience.</p><button type="button" class="btn-close btn-close-white" onClick="parentNode.remove()" aria-label="Close"></button></div><![endif]-->
+  <footer>
+    <small>© <script>document.write(new Date().getFullYear())</script> Suyu Emulator Is Not Affiliated Or Endorsed With Tropic Haze LLC Or Nintendo Co. Ltd.</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1
+.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3
+/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $("#loader-wrapper").fadeOut(700);
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

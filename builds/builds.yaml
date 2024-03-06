@@ -1,0 +1,11 @@
+builds:
+  - name: Suyu Alpha # Type A Short Name For The Release: Ex: Suyu Alpha, Suyu Beta
+    fullname: Suyu Alpha Build 32doqnks9 # full name
+    id: 1 # Increase This Every Time A Build Get Released. This Id Identifies The Build For The Website To Sort Them By Newest To Oldest.  
+    date: 2024-03-06 # date when id get published used to display how long ago was the build releeased
+    description: Added Feature X # description of the build can put changelogs here
+    downloadurlwindows: https://example.com
+    downloadurllinux: https://example.com
+    
+  - name: Suyu Beta
+    fullname: 
