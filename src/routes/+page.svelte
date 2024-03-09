@@ -83,12 +83,12 @@
 			<div class="buttons">
 				<button
 					on:click={() =>
-						window.open("https://git.suyu.dev/explore/organizations", "_blank")}
-					class="download">Git Repos</button
+						window.open("https://gitlab.com/suyu-emu/suyu", "_blank", "noopener noreferrer")}
+					class="download">Git Repo</button
 				>
 				<button
 					class="discord"
-					on:click={() => window.open("https://discord.gg/suyu", "_blank")}
+					on:click={() => window.open("https://discord.gg/suyu", "_blank", "noopener noreferrer")}
 					>Discord</button
 				>
 			</div>
