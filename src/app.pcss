@@ -1,4 +1,118 @@
-/* Write your global styles here, in PostCSS syntax */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "Consolas";
+	src: url(./assets/fonts/Consolas.ttf) format("truetype");
+}
+
+html,
+body {
+	min-height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #131215;
+	color: #ffffff;
+	font-family: "DM Sans", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	scrollbar-gutter: stable;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Outfit", sans-serif;
+}
+
+::selection {
+	background: #eee;
+	color: #000;
+}
+
+:focus-visible {
+	@apply outline-none ring-2 ring-sky-400;
+}
+
+.cta-button {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
+		radial-gradient(109.26% 109.26% at 49.83% 13.37%, #ffffff 0%, #babaca 100%);
+	color: black;
+	@apply flex w-fit shrink-0 select-none flex-row items-center justify-center gap-4 rounded-xl py-3 pl-7 pr-5 font-bold transition;
+}
+
+.button,
+.cta-button {
+	padding: 0.75rem 1.5rem;
+}
+
+.button:disabled,
+.cta-button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.button {
+	border: 2px solid #46424d;
+	@apply flex w-fit shrink-0 select-none flex-row items-center justify-center gap-4 rounded-xl px-6 py-3 font-bold transition;
+}
+
+.button:hover {
+	border: 2px solid transparent;
+	background: #c3c3cd;
+	color: black;
+}
+
+.button-sm {
+	border: 2px solid #46424d;
+	@apply flex w-fit shrink-0 select-none flex-row items-center justify-center gap-4 rounded-xl px-4 py-2 text-sm font-bold transition;
+}
+
+.button-sm:hover {
+	border: 2px solid transparent;
+	background: #c3c3cd;
+	color: black;
+}
+
+.input {
+	border: 2px solid #46424d;
+	/* @apply w-full rounded-xl px-4 py-3 text-sm font-bold transition; */
+	width: 100%;
+	border-radius: 0.75rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: all 0.2s;
+	background-color: transparent;
+}
+
+.link {
+	@apply text-blue-300 underline transition-all ease-out hover:text-blue-100;
+}
+
+@keyframes contentShow {
+	0% {
+		opacity: 0;
+		transform: translate(-50%, -48%) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+@keyframes overlayShow {
+	0% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

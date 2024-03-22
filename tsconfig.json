@@ -10,7 +10,10 @@
 		"sourceMap": true,
 		"strict": true,
 		"moduleResolution": "bundler",
-		"noImplicitAny": false
+		"noImplicitAny": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"strictPropertyInitialization": false
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//

@@ -1,7 +1,14 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { imagetools } from "vite-imagetools";
 
 export default defineConfig({
-	plugins: [ViteImageOptimizer(), sveltekit()],
+	plugins: [
+		imagetools({
+			defaultDirectives: new URLSearchParams({
+				format: "webp",
+			}),
+		}),
+		sveltekit(),
+	],
 });

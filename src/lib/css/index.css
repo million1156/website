@@ -25,7 +25,30 @@ h4,
 h5,
 h6 {
 	font-family: var(--header-font) !important;
-	font-size: 64px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
 }
 
 body {
@@ -69,4 +92,27 @@ button:hover {
 button:active {
 	transition: 0.05s ease-in-out filter;
 	filter: brightness(0.9);
+}
+
+.panel-blur {
+	background: color-mix(in srgb, var(--color-primary), transparent 50%);
+	border: var(--border-primary);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 0 48px 0 rgba(39, 56, 75, 0.5);
+}
+
+input[type="text"],
+input[type="password"] {
+	padding: 8px 16px;
+	background-color: var(--color-primary);
+	border: var(--border-primary);
+	border-radius: 16px;
+	color: var(--text-color);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	outline: solid 2px var(--text-color);
 }
